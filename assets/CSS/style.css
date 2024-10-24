@@ -1,6 +1,8 @@
 /*Body*/
 *{
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
 div{
     display: block;
@@ -18,17 +20,53 @@ body{
 /*Body*/
 
 /*header*/
-.banner h1{
+.banner{
+    background-image:linear-gradient(rgba(0, 0, 0, .6),rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8D880; 
+}
+.banner .banner-content{
+    color: white;
+    width: 600px;
+    margin: auto;
     text-align: center;
+}
+.banner .logo{
+    background: rgba(0, 0, 0,.2);
+    height: 268px;
+    width: 268px;
+    left: 121px;
+    top: 27px;
+    margin: auto;
+    border-radius: 50%;
+    padding:16px;
+    margin-bottom: 16px;
+}
+.banner .logo img{
+    object-fit: contain;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    left: 121px;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.banner h1{
+    font-size: 2.5em;
+    font-weight: 900;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(#33A8DB, #1472B7);
-    background-clip: text;
     color: transparent;
-    font-size: 2.5rem;
-    font-weight: 900;;
+    background: -webkit-linear-gradient(#33a8DB, #1472B7);
+    -webkit-background-clip: text;
 }
 h1{
     display: block;
+    font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -36,62 +74,93 @@ h1{
     font-weight: bold;
     unicode-bidi: isolate;
 }
+.banner p{
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
 p{
-    text-align: center;
-    
-}
-
-.banner .logo img{
-    object-fit: contain;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    
-    
-}
-.banner .logo{
-    background: rgba(0, 0, 0,.2);
-    height: 260px;
-    width: 260px;
-    margin: auto;
-    border-radius: 50%;
-    padding:16px;
-    margin-bottom: 16px;
-    
-}
-img{
-    overflow-clip-margin: content-box;;
-    overflow: clip;
-    
-}
-.banner{
-    background-image:linear-gradient(rgba(0, 0, 0, .6),rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)) url('../images/banner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-    padding-top: 60px;
-    border-bottom: 1px solid #33A8D880;
-    
-}
-.banner .banner-content{
     color: white;
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.banner .banner-content button{
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+button{
+    appearance: auto;
+    
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
 /*header*/
+/*Main*/
+main{
+    display: block;
+    unicode-bidi: isolate;
+}
+#couse-content{
+    width: 800px;
+    text-align: center;
+}
+section{
+    margin: 100px auto;
+}
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
+h2{
+    font-size: 2rem;
+    color: #33a8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+p{
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/*Main*/
